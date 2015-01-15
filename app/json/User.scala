@@ -41,4 +41,12 @@ object User extends Controller {
     )
   }
 
+  def getUsersDatabase = Action {
+    Ok(
+      Json.parse(
+        scala.io.Source.fromFile("/Users/anton/Development/Code/api-gateway/app/gallery/user-database").getLines().mkString
+      )
+    )
+  }
+
 }

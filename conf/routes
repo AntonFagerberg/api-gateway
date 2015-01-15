@@ -4,12 +4,14 @@
 
 # Home page
 
-GET        /user/:user          json.User.getUser(user: String)
-GET        /users/:users        json.User.getUsers(users: String)
+GET        /user/:user           json.User.getUser(user: String)
+GET        /users/:users         json.User.getUsers(users: String)
+GET        /user-database        json.User.getUsersDatabase
 
-GET        /image               gallery.Gallery.getImage(i: Int)
-GET        /images              gallery.Gallery.getImages
-GET        /gallery             gallery.Gallery.index
+
+GET        /image                gallery.Gallery.getImage(i: Int)
+GET        /images               gallery.Gallery.getImages
+GET        /gallery              gallery.Gallery.index
 
 
 #GET     /                           controllers.Application.index
